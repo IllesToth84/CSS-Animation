@@ -1,0 +1,131 @@
+ body {
+     background-color: #DCDCDC;
+     overflow: hidden;
+ }
+
+ .animation-container {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+ }
+
+ .circle-wrap {
+     position: absolute;
+     top: 5vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .circle {
+     width: 45%;
+ }
+
+ #first-circle {
+     animation-name: move1;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+ }
+
+ #second-circle {
+     animation-name: move2;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+ }
+
+ #third-circle {
+     animation-name: move3;
+     animation-duration: 6s;
+     animation-iteration-count: infinite;
+
+ }
+
+ #circle-cut-image {
+     width: 148%;
+     animation-name: move4;
+     animation-duration: 2s;
+     animation-iteration-count: infinite;
+ }
+
+ @keyframes move1 {
+     0% {
+         transform: translate(-20px) rotateZ(-20deg);
+     }
+
+     50% {
+         transform: translate(20px) rotateZ(0deg);
+
+     }
+
+     100% {
+         transform: translate(-20px) rotateZ(-20deg);
+     }
+ }
+
+ @keyframes move2 {
+     0% {
+         transform: translate(10px) rotateZ(-30deg);
+     }
+
+     50% {
+         transform: translate(-10px) rotateZ(0deg);
+     }
+
+     100% {
+         transform: translate(10px) rotateZ(-30deg);
+     }
+ }
+
+ @keyframes move3 {
+     0% {
+         transform: translate(-20px) rotateZ(-20deg);
+     }
+
+     16.6% {
+         transform: translate(20px) rotateZ(0deg);
+
+     }
+
+     33.3% {
+         transform: translate(-20px) rotateZ(-20deg);
+     }
+
+     49.8% {
+         transform: translate(20px) rotateZ(0deg);
+
+     }
+
+     66.4% {
+         transform: translate(-20px) rotateZ(-20deg);
+     }
+
+     76% {
+         transform: translate(15px) rotateZ(0deg);
+     }
+
+     92% {
+         transform: translate(-19px) rotateZ(-20deg);
+     }
+
+     100% {
+         transform: translate(-20px) rotateZ(0deg);
+     }
+ }
+
+
+ @keyframes move4 {
+     0% {
+         transform: rotateZ(-5deg);
+     }
+
+     50% {
+         transform: rotateZ(5deg);
+     }
+
+     100% {
+         transform: rotateZ(-5deg);
+     }
+ }
